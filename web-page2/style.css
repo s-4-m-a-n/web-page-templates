@@ -1,0 +1,267 @@
+*{
+  box-sizing : border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  overflow: hidden;
+
+   width:100%;
+   height:100%;
+}
+
+.body-container{
+     background-color: rgba(139, 5, 21, 0.89);
+     height:100vh;
+     width : 60%;
+     z-index: -1;
+     position: absolute;
+     border-right: 3px solid rgba(207, 203, 206, 0.01);
+     animation-name: beginning;
+     animation-duration: 3s;
+}
+
+@keyframes beginning {
+   0%{
+     width : 0%;
+   }
+   100%{
+     width : 60%;
+   }
+
+}
+
+nav{
+
+  width:100%;
+  height: 9vh;
+  background-color: rgba(32, 33, 32, 0.1);
+  position: relative;
+  z-index: 0;
+}
+
+.nav-links  {
+   margin-left: 50vw;
+   width : 25%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+}
+
+nav > .nav-links li,a {
+  text-decoration: none;
+  list-style: none;
+  color : rgba(15, 15, 15, 0.8);
+  letter-spacing: 0.25vw;
+  text-shadow: 1vh 0.5vh 1vh rgba(13, 12, 13, 0.58);
+
+  width: 50%;
+  margin-top: 3vh;
+  margin-left: 5vw;
+
+
+
+}
+
+nav > .nav-links li:hover {
+  transform: scale3d(1.1,1.1,1.1);
+  transition: transform 1s;
+}
+
+
+
+
+
+section > .container{
+  margin-top: 12vh;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 'top right'
+                       'middle right'
+                       'bottom right'
+                       'footer footer';
+
+}
+
+section > .container > .title-top-left{
+  grid-area: top;
+  padding : 5vh;
+
+  margin : 2vw;
+}
+section > .container > .title-top-left > h1 {
+  text-align: center;
+  font-size: 4vw;
+  color: rgb(173, 170, 173);
+  font-family: fantasy;
+  letter-spacing: 1.6vw;
+
+  text-shadow: 1vw 1vw 1.5vw black;
+}
+
+section >.container > .description-middle-left{
+  grid-area: middle;
+  width: 40%;
+  align-items: right;
+
+  margin-left: 25vw;
+
+}
+
+section >.container > .description-middle-left > p {
+  word-wrap: break-word;
+  text-align: left;
+  color : rgb(173, 170, 173);
+  letter-spacing: 0.3vw;
+  word-spacing: 0.4vw;
+  font-size: 2.5vh;
+
+  text-shadow: 1vw 1vw 2vw black;
+}
+
+
+
+section >.container >.icon-right{
+  grid-area :right;
+  text-align: center;
+  margin : 2vh;
+  padding-left: 25vw;
+}
+
+section > .container  > .icon-right > h2 {
+  text-align: center;
+  font-size: 4vw;
+  color: rgb(50, 2, 5);
+  font-family :   sans-serif;
+  letter-spacing: 1.6vw;
+  text-shadow: 1vw 1vw 1.5vw black;
+
+}
+
+section > .container  > .icon-right > p{
+  word-wrap: break-word;
+  text-align: left;
+  color : rgb(177, 6, 22);
+  letter-spacing: 0.3vw;
+  word-spacing: 0.4vw;
+  font-size: 2.5vh;
+
+  text-shadow: 1vw 1vw 2vw black;
+}
+
+
+section >.container > .footer {
+  grid-area : footer ;
+  padding : 3vh;
+  margin : 0vh;
+  margin-top: 2vh;
+  display : flex;
+  justify-content: space-around;
+  position: absolute;
+  margin-top: 64vh;
+  margin-left: 38vw;
+}
+
+
+
+section > .container > .footer > .button > a {
+  text-shadow: 1vh 1vh 1vh rgba(13, 12, 13, 0.58);
+  font-size: 1.2vw;
+  font-family: sans-serif;
+}
+
+section > .container > .footer > .button > a:hover{
+  border-bottom: 1.5px solid rgba(65, 15, 21, 0.78);
+  padding-bottom: 1.5vh;
+
+}
+
+section > .container > .footer > .button:hover {
+  transform: scale3d(1.02,1.02,1.02);
+  transition: transform 0.2s;
+}
+
+
+
+
+.design > .circle {
+  position: absolute;
+  top:0;
+  left:0;
+   width : 5vw;
+   height : 5vw;
+   background-color : rgba(59, 27, 35,0.5);
+   box-shadow: 1vw 1vw 2vw rgba(10, 10, 10, 0.78);
+   border-radius: 50% 50%;
+   margin-top: 15vh;
+  z-index: 10;
+}
+
+.design > .circle1{
+   margin-left: -2vw;
+  transform: translatex(59.4vw);
+  transition: transform 3s ;
+}
+
+
+
+
+.design > .circle2{
+  margin-left:97vw;  ;
+  position: absolute;
+  top:0;
+  left : 0;
+  margin-top: 50vh;
+
+  transform: translatex(-39.6vw);
+  transition: transform 3s ;
+
+}
+
+
+
+.design > .circle3{
+  position: absolute;
+  width : 78vw;
+  height : 66vw;
+  background-color : rgba(59, 27, 35,0.001);
+  box-shadow: 1vw 1vw 2vw rgba(10, 10, 10, 0.88);
+  border-radius: 50% 50%;
+
+  margin-left: 0vw;
+  margin-top: -45vh;
+
+  transform: translate(-20vw,-30vh);
+  transition: transform 1s;
+  z-index: -1;
+}
+
+.design > .circle4 {
+  position: absolute;
+  width : 40vw;
+  height : 40vw;
+  background-color : rgba(59, 27, 35,0.2);
+  box-shadow: 1vw 1vw 2vw rgba(10, 10, 5, 0.48);
+  border-radius: 50% 50%;
+
+  margin-left: 60.3vw;
+  margin-top: -135vh;
+
+  transform: translate(10vw,-10vh);
+  transition: transform 1.5s;
+  z-index: -1;
+
+
+}
+
+.design > .circle1:hover {
+  transform: translateY(30vh);
+  transition: transform 1s;
+}
+.design > .circle2:hover {
+  transform: translateY(-18vh);
+  transition: transform 1s;
+}

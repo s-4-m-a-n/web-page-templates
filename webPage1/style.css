@@ -1,0 +1,250 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding : 0;
+}
+
+body{
+  width:100%;
+  height:100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+/*  background-image: linear-gradient(to right top, #031634, #00486b, #007d7e, #36af67, #cfd549);
+  background-repeat: no-repeat;
+  background-size: cover;
+*/
+}
+.nav-bar{
+  position: relative;
+  top : 0;
+  left : 0;
+
+  width: 100%;
+  height : 40vw;
+  background-image: linear-gradient(to right top, #031634, #00486b, #007d7e, #36af67, #cfd549);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100% 0% 0% 100% / 0% 0% 100% 100% ;
+
+  border: 1.3px solid rgba(16, 21, 96, 0.69);
+  z-index : 2;
+}
+
+.nav-design{
+  position: absolute;
+  top : 2vw;
+  left : 2vw;
+
+  width: 100%;
+  height : 40vw;
+  background-color: rgba(233, 250, 41,0.7);
+  border-radius: 100% 0% 0% 100% / 0% 0% 100% 100% ;
+  box-shadow: 50px 10px 50px rgb(9, 80, 61);
+  border: 0.3px solid #cfd549;
+  z-index : 0;
+}
+
+
+
+.nav-bar > h2{
+  color: rgba(249, 250, 249, 1);
+  font-size: 4vw;
+  font-family:  'Advent Pro';
+  letter-spacing: 1.5vw;
+  word-spacing: 2vw;
+  text-align: center;
+ text-shadow: 10px 10px 20px black;
+ transition: transform 2s;
+ cursor: default;
+
+ transform: translateZ(0);
+backface-visibility: hidden;
+}
+
+
+.nav-bar > h4 {
+  position: absolute;
+  top:1vw;
+  left:65vw;
+
+   font-size: 1.3vw;
+   color: rgba(242, 220, 8, 0.71);
+   font-family:'Advent Pro';
+   text-align: right;
+   word-wrap: break-word;
+   margin-right: 10vw;
+   margin-top: 10vw;
+   line-height: 5vw;
+   letter-spacing: 1vw;
+   text-shadow: 1px 1px 9px black;
+  }
+
+.nav-bar >  .button {
+    position: absolute;
+    top:20vw;
+    left:40vw;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .nav-bar > .button > a {
+    text-decoration: none;
+    margin-left :10vw;
+    border-radius: 4vw 4vw;
+    padding : 1.5vw;
+    box-shadow: 5px 5px 20px rgba(33, 33, 32, 0.58);
+
+  }
+   .nav-bar > h2 > .letter {
+       font-size : 10vw;
+       transition: transform 2s;
+
+   }
+
+
+  .nav-bar > .button > a:first-child{
+
+    color :white;
+    background-color: #031634;
+    font-family:  'Advent Pro';
+    letter-spacing: 1vw;
+    font-size: 0.9vw;
+
+
+  }
+  .nav-bar > .button > a:last-child{
+
+    background-color:#CFD549 ;
+    color : rgb(34, 34, 34);
+    font-family: serif;
+    font-family:  'Advent Pro';
+    font-weight: bold;
+    letter-spacing: 1vw;
+    font-size: 0.9vw;
+    z-index: 0;
+
+  }
+.nav-bar > .button > a:hover{
+  transform: scale(1.048);
+}
+.nav-bar > h2 > .letter:hover {
+  transform : scale3d(1.5,1.5,1.5);
+}
+
+
+section{
+  margin:0 5vw;
+}
+
+section > .upper  {
+    display :grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+
+    margin-top: 15vh;
+
+    width : 100%;
+    height : 50vh;
+}
+
+section > .upper > .description{
+   background-color: rgba(180, 241, 125,0.5);
+   border-radius: 2px;
+   box-shadow: 10px 5px 30px rgba(39, 41, 40, 0.8);
+   font-family:'Satisfy';
+    padding : 50px;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 2vw;
+    width : 50vw;
+    border: 0.4vw solid rgba(217, 246, 36, 0.3);
+}
+
+section > .upper > .img {
+  position: relative;
+  top: 0;
+  left : 0;
+  display:flex;
+  flex : 50%;
+  margin-top :10vw;
+
+}
+
+section > .upper > .img > img {
+  width : 15vw;
+  height: 20vw;
+  border: 0.4vw solid white ;
+  box-shadow: 10px 10px 30px black;
+  transition: transform 0.4s;
+}
+
+section > .upper > .img > img:nth-child(2) {
+  position : absolute;
+  left : 10vw;
+  top : 6vw;
+  width : 15vw;
+  height: 20vw;
+}
+section > .upper > .img > img:last-child {
+   margin-left: 6vw;
+}
+
+
+section > .upper > .img > img:hover {
+  transform: scale3d(1.1,1.1,1.1);
+  z-index : 10;
+}
+
+
+section > .lower {
+  background-color: rgba(52, 52, 51, 0.04);
+  width : 100%;
+  padding : 0;
+  margin-top: 20vw;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+section > .lower > .box {
+  background-color: rgb(99, 122, 108);
+  justify-content: center;
+  margin: 10vw 2.5vw 10vw 2.5vw;
+  border: 3px solid white;
+  box-shadow: 2vw 2vw 5vw rgba(10, 10, 10, 0.73);
+  transition: transform 0.3s;
+  padding : 2vw;
+
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 2vw;
+
+}
+
+
+
+
+  section > .lower > .box:nth-child(2) {
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+section > .lower > .box:hover {
+   transform: scale3d(1.2,1.2,1.2);
+
+}
+
+a{
+  text-decoration: none;
+  color:rgb(156, 161, 157);
+}
+
+
+footer {
+  width : 100%;
+  height: 20vw;
+    background-color: rgba(109, 241, 5, 0.53);
+
+}
